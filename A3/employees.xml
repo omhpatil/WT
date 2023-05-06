@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+<employees>
+  <employee>
+    <name>Om Patil</name>
+    <title>Software Engineer</title>
+    <department>CS</department>
+    <salary>100000</salary>
+  </employee>
+  <employee>
+    <name>Viraj Kate</name>
+    <title>Web Developer</title>
+    <department>ENTC</department>
+    <salary>90000</salary>
+  </employee>
+  <employee>
+    <name>Jenny Roy</name>
+    <title>Civil Services</title>
+    <department>CIVIL</department>
+    <salary>110000</salary>
+  </employee>
+</employees>
