@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration Page</title>
+	<link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+
+<body>
+	<nav>
+		<ul>
+			<li><a id="a1" href="/chart">Pie Chart</a></li>
+			<li><a id="a2" href="/faq">Help</a></li>
+			<li><a id="a3" href="/table">Table</a></li>
+		</ul>
+	</nav>
+	<div class="container">
+		<h1>Registration Form</h1><br>
+		<form method="post" action="/submit">
+			<label for="firstname" style="font-size: 18px;">First Name:</label>
+			<input type="text" id="firstname" name="firstname" required>
+
+			<label for="lastname" style="font-size: 18px;">Last Name:</label>
+			<input type="text" id="lastname" name="lastname" required>
+
+			<label for="email" style="font-size: 18px;">Email:</label>
+			<input type="email" id="email" name="email" required>
+
+			<label for="mobile" style="font-size: 18px;">Mobile No:</label>
+			<input type="text" id="mobile" name="mobile" required>
+
+
+
+			<label for="year"> Year :
+				<select id="year" name="year">
+					<option value="FE">FE</option>
+					<option value="SE">SE</option>
+					<option value="TE">TE</option>
+					<option value="BE">BE</option>
+				</select>
+			</label><br><br>
+
+
+			<!-- <label for="password">Password:</label>
+			<input type="password" id="password" name="password" required> -->
+
+			<input type="submit" value="Submit" />
+		</form>
+	</div>
+
+
+</body>
+
+</html>

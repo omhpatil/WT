@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Table Page</title>
+    <link rel="stylesheet" href="../static/table.css" type="text/css">
+  </head>
+  <body>
+    <button><a href="/">Back</a></button>
+    <h1>Data Table </h1>
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Mobile No</th>
+          <th>Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in data %}
+        <tr>
+          {% for value in row %}
+          <td>{{ value }}</td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </body>
+</html>

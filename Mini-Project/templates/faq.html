@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Chatbot Example</title>
+    <!-- <link rel="stylesheet" href="../static/faq.css" type="text/css"> -->
+</head>
+<body>
+	<button><a href="/">Back</a></button>
+	<h1>FAQ</h1>
+	<form method="POST">
+		<label for="message">Ask a question:</label><br>
+		<input type="text" id="message" name="message"><br>
+		<input type="submit" value="Submit">
+	</form>
+	{% if message %}
+	<p>You: {{ message }}</p>
+	{% endif %}
+	{% if response %}
+	<p>Bot: {{ response }}</p>
+	{% endif %}
+</body>
+</html>
